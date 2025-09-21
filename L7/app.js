@@ -58,3 +58,8 @@ function useVechile(vechile) {
 }
 useVechile(v1);
 useVechile(v2);
+// Type assertion / casting
+var userInput = document.getElementById("user-input"); // exclaimation mark btata ki user input null nhi hai.. 
+// <HTMLInputElement> se type casting kiya gya hai kyuki uske bina "value" property exit nhi karegi htmlElement pe
+// const userInput = document.getElementById("user-input")! as HTMLInputElement    // another way
+userInput.value = "Hey Pranay";
